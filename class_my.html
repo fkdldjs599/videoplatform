@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개룡의</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- 팝업1 -->
+    <section class="pop pop1">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <article class="white_bg">
+    
+            <div class="close_area">
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_con">
+    
+                <h1 class="p_h1"></h1>
+    
+                <p class="p_sub"></p>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btn">확인</button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- 팝업2 -->
+    <section class="pop pop2">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <article class="white_bg">
+    
+            <div class="close_area">
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_con">
+    
+                <h1 class="p_h1"></h1>
+    
+                <p class="p_sub"></p>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btns btn1">취소</button>
+    
+                <button type="button" class="p_btns btn2"></button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- 헤더 -->
+
+    <header class="header">
+        <div class="h_left vt_mid">
+            <button type="button" class="back_btn" onclick="history.go(-1);">
+                <img src="img/back.png" alt="뒤로가기">
+            </button>
+            
+        </div>
+        <div class="h_cen vt_mid">
+            <h1 class="h1">수강 중 강좌</h1>
+        </div>
+        <div class="h_right vt_mid">
+            <button type="button" class="hr_btn alarm">
+                <img src="img/alarm.png" alt="알림">
+
+                <!--신규 알람 있을때 on-->
+                <span class="dot on"></span>
+            </button>
+            <button type="button" class="hr_btn ham">
+                <img src="img/ham.png" alt="메뉴">
+            </button>
+        </div>
+    </header>
+
+    <!-- 햄버거바 -->
+    <div class="ham_menu">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="white_bg">
+    
+            <button type="button" class="hambtn go_set">
+    
+                <img src="img/icon_set.png" alt="설정">
+    
+            </button>
+    
+            <button type="button" class="hambtn close_btn">
+    
+                <img src="img/ham_close.png" alt="닫기">
+    
+            </button>
+    
+    
+    
+            <div class="rel">
+    
+                <div class="h_top">
+    
+                    <div class="pro_area">
+    
+                        <div class="rel2">
+    
+                            <a href="myinfo.html">
+    
+                                <div class="circle">
+    
+                                    <div class="grid">
+    
+                                        <img src="img/empty.png" id="preview" class="empty">
+    
+                                    </div>
+    
+                                </div>
+    
+    
+    
+                                <div class="icon">
+    
+                                    <div class="grid">
+    
+                                        <img src="img/icon_edit.png" alt="수정">
+    
+                                    </div>
+    
+                                </div>
+    
+                            </a>
+    
+                        </div>
+    
+    
+    
+                        <div class="nick">
+    
+                            <span class="fs18 vt_bot">
+    
+                                <a href="myinfo.html">홍길동</a>
+    
+                            </span>
+    
+                            <span class="fs14 vt_bot">님</span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="cash_area">
+    
+                        
+    
+                        <div class="cash_gray">
+
+                            <div class="left vt_mid">보유 캐시</div>
+                        
+                            <div class="right vt_mid suite">999,999,999,999</div>
+                        
+                        </div>
+    
+    
+    
+                        <!-- <div class="go_cash">
+    
+                            <button type="button" class="cash_btn">캐시 충전 하러 가기</button>
+    
+                        </div> -->
+    
+                    </div>
+    
+    
+    
+                    <nav class="ham_nav">
+    
+                        <a href="invite_friend.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv1.png" alt="친구 초대">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">친구 초대</div>
+    
+                        </a>
+    
+                        <a href="faq.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv2.png" alt="자주 묻는 질문">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">자주 묻는 질문</div>
+    
+                        </a>
+    
+                        <a href="inquiry.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv3.png" alt="1:1 문의">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">1:1 문의</div>
+    
+                        </a>
+    
+                        <a href="term.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv4.png" alt="약관">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">약관</div>
+    
+                        </a>
+    
+                    </nav>
+    
+                </div>
+    
+    
+    
+    
+    
+                <div class="h_bottom">
+    
+                    <div class="btn_area">
+    
+                        <button type="button" class="logout_btn">로그아웃</button>
+    
+                    </div>
+    
+    
+    
+                    <div class="copy">
+    
+                        &copy;개룡의. ALL RIGHTS RESERVED.
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    </div>
+
+
+    <!-- 컨텐츠 -->
+
+    <section id="class">
+
+
+
+        <article class="class">
+    
+            <div class="c_title_area pd15">
+    
+    
+    
+                <ul class="tab_ul">
+    
+                    <li class="tab_li li1 on">진행 중인 강의</li>
+    
+                    <li class="tab_li li2">지난 강의</li>
+    
+                </ul>
+    
+    
+    
+                <div class="c_left vt_mid">
+    
+                    <h2 class="c_title">수강이 진행 중인 강의</h2>
+    
+    
+    
+                    <ul class="sort_ul">
+    
+                        <li class="sort_li on">전체</li>
+    
+                        <li class="sort_li">최신순</li>
+    
+                        <li class="sort_li">인기순</li>
+    
+                    </ul>
+    
+                </div>
+    
+                <div class="c_right vt_mid">
+    
+                    <select name="category" class="input">
+    
+                        <option>전체</option>
+    
+                        <option>전체</option>
+    
+                        <option>전체</option>
+    
+                    </select>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="cont">
+    
+                <div class="class_wrap">
+    
+                    <a href="class_detail.html" class="class_a ing on">
+    
+                        <div class="img_area">
+    
+                            <div class="grid">
+    
+                                <img src="img/thumb1.png" alt="img">
+    
+                            </div>
+    
+    
+    
+                            <div class="abs left">
+    
+                                <span class="cate red">강의종료까지 D-7</span>
+    
+                            </div>
+    
+    
+    
+                            <div class="abs right">
+    
+                                <span class="cate black"><span class="per">30%</span>03:23 / 09:59</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="text_area">
+    
+                            <div class="title">
+    
+                                1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다?
+    
+                            </div>
+    
+                            <div class="info">
+    
+                                <div class="i_left vt_mid">
+    
+                                    <span class="red">강의종료까지 남은 시간</span>
+    
+                                    <span class="red"><span class="suite">7</span>일전</span>
+    
+                                </div>
+    
+                                <div class="i_right vt_mid">
+    
+                                    <span class="gray">2024.05.30</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </a>
+    
+    
+    
+                    <a href="class_detail.html" class="class_a ing on">
+    
+                        <div class="img_area">
+    
+                            <div class="grid">
+    
+                                <img src="img/thumb1.png" alt="img">
+    
+                            </div>
+    
+    
+    
+                            <div class="abs left">
+    
+                                <span class="cate red">강의종료까지 D-7</span>
+    
+                            </div>
+    
+    
+    
+                            <div class="abs right">
+    
+                                <span class="cate black"><span class="per">30%</span>03:23 / 09:59</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="text_area">
+    
+                            <div class="title">
+    
+                                1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다?
+    
+                            </div>
+    
+                            <div class="info">
+    
+                                <div class="i_left vt_mid">
+    
+                                    <span class="red">강의종료까지 남은 시간</span>
+    
+                                    <span class="red"><span class="suite">7</span>일전</span>
+    
+                                </div>
+    
+                                <div class="i_right vt_mid">
+    
+                                    <span class="gray">2024.05.30</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </a>
+    
+    
+    
+                    <a href="class_detail.html" class="class_a ing on">
+    
+                        <div class="img_area">
+    
+                            <div class="grid">
+    
+                                <img src="img/thumb1.png" alt="img">
+    
+                            </div>
+    
+    
+    
+                            <div class="abs left">
+    
+                                <span class="cate red">강의종료까지 D-7</span>
+    
+                            </div>
+    
+    
+    
+                            <div class="abs right">
+    
+                                <span class="cate black"><span class="per">30%</span>03:23 / 09:59</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="text_area">
+    
+                            <div class="title">
+    
+                                1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다?
+    
+                            </div>
+    
+                            <div class="info">
+    
+                                <div class="i_left vt_mid">
+    
+                                    <span class="red">강의종료까지 남은 시간</span>
+    
+                                    <span class="red"><span class="suite">7</span>일전</span>
+    
+                                </div>
+    
+                                <div class="i_right vt_mid">
+    
+                                    <span class="gray">2024.05.30</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </a>
+    
+    
+    
+                    <a href="class_detail.html" class="class_a rev">
+    
+                        <div class="img_area">
+    
+                            <div class="grid">
+    
+                                <img src="img/thumb1.png" alt="img">
+    
+                            </div>
+    
+    
+    
+                            <div class="abs left">
+    
+                                <span class="cate red">재구매시 60% 할인!</span>
+    
+                            </div>
+    
+    
+    
+                            <div class="abs right">
+    
+                                <span class="cate black">09:59</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="text_area">
+    
+                            <div class="title">
+    
+                                1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다?
+    
+                            </div>
+    
+                            <div class="info">
+    
+                                <div class="i_left vt_mid">
+    
+                                    <span class="red">강의종료</span>
+    
+                                </div>
+    
+                                <div class="i_right vt_mid">
+    
+                                    <span class="gray">2024.05.30</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="rev_area">
+    
+                            <div class="star_wrap">
+    
+                                <span class="star"></span>
+    
+                                <span class="star"></span>
+    
+                                <span class="star"></span>
+    
+                                <span class="star"></span>
+    
+                                <span class="star"></span>
+    
+                            </div>
+    
+    
+    
+                            <div class="btn_area">
+    
+                                <button type="button" class="btn_common white">
+    
+                                    <span class="vt_mid num suite">(<span class="click">0</span>/5)</span>
+    
+                                    <span class="vt_mid txt">평점 남기기</span>
+    
+                                </button>
+    
+                            </div>
+    
+                        </div>
+    
+                    </a>
+    
+    
+    
+                    <a href="class_detail.html" class="class_a end">
+    
+                        <div class="img_area">
+    
+                            <div class="grid">
+    
+                                <img src="img/thumb1.png" alt="img">
+    
+                            </div>
+    
+    
+    
+                            <div class="abs left">
+    
+                                <span class="cate red">재구매시 60% 할인!</span>
+    
+                            </div>
+    
+    
+    
+                            <div class="abs right">
+    
+                                <span class="cate black">09:59</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="text_area">
+    
+                            <div class="title">
+    
+                                1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다?
+    
+                            </div>
+    
+                            <div class="info">
+    
+                                <div class="i_left vt_mid">
+    
+                                    <span class="red">강의종료</span>
+    
+                                </div>
+    
+                                <div class="i_right vt_mid">
+    
+                                    <span class="gray">2024.05.30</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="rev_area">
+    
+                            <div class="star_wrap">
+    
+                                <span class="star on"></span>
+    
+                                <span class="star on"></span>
+    
+                                <span class="star on"></span>
+    
+                                <span class="star on"></span>
+    
+                                <span class="star"></span>
+    
+                            </div>
+    
+    
+    
+                            <div class="btn_area">
+    
+                                <button type="button" class="btn_common readonly">
+    
+                                    <span class="vt_mid txt">4 / 5</span>
+    
+                                </button>
+    
+                            </div>
+    
+                        </div>
+    
+                    </a>
+    
+    
+    
+                    <a href="class_detail.html" class="class_a end">
+    
+                        <div class="img_area">
+    
+                            <div class="grid">
+    
+                                <img src="img/thumb1.png" alt="img">
+    
+                            </div>
+    
+    
+    
+                            <div class="abs left">
+    
+                                <span class="cate red">재구매시 60% 할인!</span>
+    
+                            </div>
+    
+    
+    
+                            <div class="abs right">
+    
+                                <span class="cate black">09:59</span>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="text_area">
+    
+                            <div class="title">
+    
+                                1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다? 1년에 3천만원짜리 청구오더가 있다?
+    
+                            </div>
+    
+                            <div class="info">
+    
+                                <div class="i_left vt_mid">
+    
+                                    <span class="red">강의종료</span>
+    
+                                </div>
+    
+                                <div class="i_right vt_mid">
+    
+                                    <span class="gray">2024.05.30</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="rev_area">
+    
+                            <div class="star_wrap">
+    
+                                <span class="star on"></span>
+    
+                                <span class="star on"></span>
+    
+                                <span class="star on"></span>
+    
+                                <span class="star on"></span>
+    
+                                <span class="star"></span>
+    
+                            </div>
+    
+    
+    
+                            <div class="btn_area">
+    
+                                <button type="button" class="btn_common readonly">
+    
+                                    <span class="vt_mid txt">4 / 5</span>
+    
+                                </button>
+    
+                            </div>
+    
+                        </div>
+    
+                    </a>
+    
+                </div>
+    
+            </div>
+    
+        </article>
+    
+    
+    
+    
+    
+    
+    
+    </section>
+
+    <footer class="footer">
+        <a href="index.html" class="nav">
+            <div class="icon_area">
+                <img src="img/nv1.png">
+            </div>
+            <div class="text_area">홈</div>
+        </a>
+        <a href="class.html" class="nav ">
+            <div class="icon_area">
+                <img src="img/nv2.png">
+            </div>
+            <div class="text_area">수강신청</div>
+        </a>
+        <a href="class_my.html" class="nav on">
+            <div class="icon_area">
+                <img src="img/nv3_on.png">
+            </div>
+            <div class="text_area">수강중인 강좌</div>
+        </a>
+        <a href="class_detail.html" class="nav">
+            <div class="icon_area">
+                <div class="profile">
+                    <div class="grid">
+                        <img src="img/nv4.png">
+                    </div>
+                </div>
+            </div>
+            <div class="text_area">마이페이지</div>
+        </a>
+    </footer>
+
+</body>
+</html>

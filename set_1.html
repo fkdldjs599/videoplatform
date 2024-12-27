@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개룡의</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- 팝업1 -->
+    <section class="pop pop1">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <article class="white_bg">
+    
+            <div class="close_area">
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_con">
+    
+                <h1 class="p_h1"></h1>
+    
+                <p class="p_sub"></p>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btn">확인</button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- 팝업2 -->
+    <section class="pop pop2">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <article class="white_bg">
+    
+            <div class="close_area">
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_con">
+    
+                <h1 class="p_h1"></h1>
+    
+                <p class="p_sub"></p>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btns btn1">취소</button>
+    
+                <button type="button" class="p_btns btn2"></button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- 헤더 -->
+
+    <header class="header">
+        <div class="h_left vt_mid">
+            <button type="button" class="back_btn" onclick="history.go(-1);">
+                <img src="img/back.png" alt="뒤로가기">
+            </button>
+            
+        </div>
+        <div class="h_cen vt_mid">
+            <h1 class="h1">설정</h1>
+        </div>
+        <div class="h_right vt_mid">
+            <button type="button" class="hr_btn alarm">
+                <img src="img/alarm.png" alt="알림">
+
+                <!--신규 알람 있을때 on-->
+                <span class="dot on"></span>
+            </button>
+            <button type="button" class="hr_btn ham">
+                <img src="img/ham.png" alt="메뉴">
+            </button>
+        </div>
+    </header>
+
+    <!-- 햄버거바 -->
+    <div class="ham_menu">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="white_bg">
+    
+            <button type="button" class="hambtn go_set">
+    
+                <img src="img/icon_set.png" alt="설정">
+    
+            </button>
+    
+            <button type="button" class="hambtn close_btn">
+    
+                <img src="img/ham_close.png" alt="닫기">
+    
+            </button>
+    
+    
+    
+            <div class="rel">
+    
+                <div class="h_top">
+    
+                    <div class="pro_area">
+    
+                        <div class="rel2">
+    
+                            <a href="myinfo.html">
+    
+                                <div class="circle">
+    
+                                    <div class="grid">
+    
+                                        <img src="img/empty.png" id="preview" class="empty">
+    
+                                    </div>
+    
+                                </div>
+    
+    
+    
+                                <div class="icon">
+    
+                                    <div class="grid">
+    
+                                        <img src="img/icon_edit.png" alt="수정">
+    
+                                    </div>
+    
+                                </div>
+    
+                            </a>
+    
+                        </div>
+    
+    
+    
+                        <div class="nick">
+    
+                            <span class="fs18 vt_bot">
+    
+                                <a href="myinfo.html">홍길동</a>
+    
+                            </span>
+    
+                            <span class="fs14 vt_bot">님</span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="cash_area">
+    
+                        
+    
+                        <div class="cash_gray">
+
+                            <div class="left vt_mid">보유 캐시</div>
+                        
+                            <div class="right vt_mid suite">999,999,999,999</div>
+                        
+                        </div>
+    
+    
+    
+                        <!-- <div class="go_cash">
+    
+                            <button type="button" class="cash_btn">캐시 충전 하러 가기</button>
+    
+                        </div> -->
+    
+                    </div>
+    
+    
+    
+                    <nav class="ham_nav">
+    
+                        <a href="invite_friend.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv1.png" alt="친구 초대">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">친구 초대</div>
+    
+                        </a>
+    
+                        <a href="faq.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv2.png" alt="자주 묻는 질문">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">자주 묻는 질문</div>
+    
+                        </a>
+    
+                        <a href="inquiry.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv3.png" alt="1:1 문의">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">1:1 문의</div>
+    
+                        </a>
+    
+                        <a href="term.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv4.png" alt="약관">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">약관</div>
+    
+                        </a>
+    
+                    </nav>
+    
+                </div>
+    
+    
+    
+    
+    
+                <div class="h_bottom">
+    
+                    <div class="btn_area">
+    
+                        <button type="button" class="logout_btn">로그아웃</button>
+    
+                    </div>
+    
+    
+    
+                    <div class="copy">
+    
+                        &copy;개룡의. ALL RIGHTS RESERVED.
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    </div>
+
+
+    <!-- 컨텐츠 -->
+
+
+    <section id="set" class="page">
+
+
+
+        <article class="setting">
+    
+            <h2 class="page_h2">
+    
+                알림 설정
+    
+            </h2>
+    
+    
+    
+            <div class="cont">
+    
+    
+    
+                <form name="alarm_set">
+    
+    
+    
+                <div class="s_set_wrap">
+    
+                    <div class="s_set">
+    
+                        <div class="s_title">
+    
+                            <h3 class="s_h3">맞춤 알림</h3>
+    
+                            <p class="sub">알림 받을 요일과 시간을 설정해주세요.</p>
+    
+                        </div>
+    
+                        <div class="s_cont">
+    
+                            <input type="checkbox" name="day" id="mon" class="ck">
+    
+                            <label for="mon" class="d_lab">월</label>
+    
+    
+    
+                            <input type="checkbox" name="day" id="tue" class="ck">
+    
+                            <label for="tue" class="d_lab">화</label>
+    
+    
+    
+                            <input type="checkbox" name="day" id="wed" class="ck">
+    
+                            <label for="wed" class="d_lab">수</label>
+    
+    
+    
+                            <input type="checkbox" name="day" id="thu" class="ck">
+    
+                            <label for="thu" class="d_lab">목</label>
+    
+    
+    
+                            <input type="checkbox" name="day" id="fri" class="ck">
+    
+                            <label for="fri" class="d_lab">금</label>
+    
+    
+    
+                            <input type="checkbox" name="day" id="sat" class="ck">
+    
+                            <label for="sat" class="d_lab">토</label>
+    
+    
+    
+                            <input type="checkbox" name="day" id="sun" class="ck">
+    
+                            <label for="sun" class="d_lab">일</label>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="s_set">
+    
+                        <div class="s_title">
+    
+                            <h3 class="s_h3">클래스 오픈 알림</h3>
+    
+                            <p class="sub">공개 예정, 수강 중인 클래스의 새로운 챕터</p>
+    
+                        </div>
+    
+                        <div class="s_cont">
+    
+                            <label for="a_set2" class="a_lab">
+    
+                                <p>수강 중인 클래스의 새로운 챕터</p>
+    
+    
+    
+                                <input type="checkbox" name="a_set" id="a_set2" class="toggle" checked>
+    
+                            </label>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="s_set">
+    
+                        <div class="s_title">
+    
+                            <h3 class="s_h3">캐시 알림</h3>
+    
+                            <p class="sub">적립 캐시 지급, 캐시 만료 알림</p>
+    
+                        </div>
+    
+                        <div class="s_cont">
+    
+                            <label for="a_set3" class="a_lab">
+    
+                                <p>캐시 만료 알림</p>
+    
+    
+    
+                                <input type="checkbox" name="a_set" id="a_set3" class="toggle" checked>
+    
+                            </label>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="s_set">
+    
+                        <div class="s_title">
+    
+                            <h3 class="s_h3">마케팅/혜택 알림</h3>
+    
+                            <p class="sub">다양한 혜택을 가장 먼저 알려드릴게요.</p>
+    
+                        </div>
+    
+                        <div class="s_cont">
+    
+                            <label for="a_set4" class="a_lab">
+    
+                                <p class="vt_mid">혜택 정보 수신</p>
+    
+    
+    
+                                <span class="agree vt_mid">
+    
+                                    <span class="txt blue">동의함</span>
+    
+                                    <span class="suite">(24.06.19)</span>
+    
+                                </span>
+    
+    
+    
+                                <!-- <span class="agree vt_mid">
+    
+                                    <span class="txt red">동의 안 함</span>
+    
+                                    <span class="suite">(24.06.19)</span>
+    
+                                </span> -->
+    
+    
+    
+                                <input type="checkbox" name="a_set" id="a_set4" class="toggle" checked>
+    
+                            </label>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="footer_fix">
+    
+                    <button type="button" class="btn_half btn1">취소</button>
+    
+                    <button type="button" class="btn_half btn2">적용</button>
+    
+                </div>
+    
+    
+    
+                </form>
+    
+    
+    
+            </div>
+    
+        </article>
+    
+    
+    
+    </section>
+
+    <script>
+
+        var p1 = $('.pop1');
+    
+        var p1_h1 = $('.pop1 .p_h1');
+    
+        var p1_sub = $('.pop1 .p_sub');
+    
+        var p1_btn = $('.pop1 .p_btn');
+    
+    
+    
+        var p2 = $('.pop2');
+    
+        var p2_h1 = $('.pop2 .p_h1');
+    
+        var p2_sub = $('.pop2 .p_sub');
+    
+        var p2_btn2 = $('.pop2 .btn2');
+    
+    
+    
+        $('.btn_half.btn2').click(function(){
+    
+            p2.addClass('on');
+    
+            p2_h1.text("설정 변경");
+    
+            p2_sub.text("설정을 변경하시겠습니까?");
+    
+            p2_btn2.text("변경");
+    
+        });
+    
+        
+    
+        p2_btn2.click(function(){
+    
+            p1.addClass('on');
+    
+            p1_h1.text('설정 변경');
+    
+            p1_sub.text('설정이 변경되었습니다.');
+    
+    
+    
+        });
+    
+    </script>
+</body>
+</html>

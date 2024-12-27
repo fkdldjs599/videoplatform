@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개룡의</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- 팝업1 -->
+    <section class="pop pop1">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <article class="white_bg">
+    
+            <div class="close_area">
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_con">
+    
+                <h1 class="p_h1"></h1>
+    
+                <p class="p_sub"></p>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btn">확인</button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- 팝업2 -->
+    <section class="pop pop2">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <article class="white_bg">
+    
+            <div class="close_area">
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_con">
+    
+                <h1 class="p_h1"></h1>
+    
+                <p class="p_sub"></p>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btns btn1">취소</button>
+    
+                <button type="button" class="p_btns btn2"></button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- 컨텐츠 -->
+
+
+    <section id="join1" class="form">
+
+        <div class="title_area">
+    
+            <h1 class="h1">본인 인증</h1>
+    
+            <p class="sub">개룡의 회원 가입을 위해 본인 인증을 해주세요.<br>(최초 1회)</p>
+    
+        </div>
+    
+    
+    
+        <form name="join_1">
+    
+            <article class="form_wrap">
+    
+                <div class="f_block">
+    
+                    <label for="user_name" class="f_lab">이름</label>
+    
+                    <div class="i_wrap">
+    
+                        <input type="text" name="user_name" id="user_name" class="input ip2" placeholder="이름 (영문입력 가능)">
+    
+                        <div class="for_wrap vt_mid">
+    
+                            <input type="checkbox" name="foreigner" id="foreigner" class="ck_vo">
+    
+                            <label for="foreigner" class="for_lab">외국인</label>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="f_block">
+    
+                    <label for="user_num" class="f_lab">주민번호</label>
+    
+                    <div class="i_wrap">
+    
+                        <input type="number" name="user_num" id="user_num" class="input ip3" placeholder="주민번호 앞 6자리">
+    
+                        <div class="num2_wrap vt_mid">
+    
+                            - ●●●●●●●
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="f_block">
+    
+                    <label for="user_num" class="f_lab">성별</label>
+    
+                    <div class="i_wrap">
+    
+                        <div class="r_wrap vt_mid">
+    
+                            <input type="radio" name="gender" id="male" class="radio">
+    
+                            <label for="male" class="r_lab">남성</label>
+    
+                        </div>
+    
+                        <div class="r_wrap vt_mid">
+    
+                            <input type="radio" name="gender" id="female" class="radio">
+    
+                            <label for="female" class="r_lab">여성</label>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="f_block">
+    
+                    <label for="user_num" class="f_lab">휴대폰번호</label>
+    
+                    <div class="i_wrap">
+    
+                        <select name="telecom" class="input block">
+    
+                            <option value="tel1">SKT</option>
+    
+                            <option value="tel2">KT</option>
+    
+                            <option value="tel3">LG</option>
+    
+                            <option value="tel4">알뜰폰</option>
+    
+                        </select>
+    
+                        <input type="number" name="phone" id="phone" class="input" placeholder="휴대폰 번호">
+    
+                    </div>
+    
+                </div>
+    
+            </article>
+    
+    
+    
+            <article class="term_area">
+    
+                <div class="all_ag">
+    
+                    <input type="checkbox" name="all_ck" id="all_ck" class="ck_vo">
+    
+                    <label for="all_ck" class="all">전체 동의</label>
+    
+                </div>
+    
+    
+    
+                <div class="terms">
+    
+                    <div class="line">
+    
+                        <input type="checkbox" name="term1" id="term1" class="ck_vo term">
+    
+                        <label for="term1" class="t_lab vt_mid">개인정보 이용취급위탁 동의</label>
+    
+    
+    
+                        <a href="term_1.html" class="more_a vt_mid">자세히보기</a>
+    
+                    </div>
+    
+                    <div class="line">
+    
+                        <input type="checkbox" name="term1" id="term2" class="ck_vo term">
+    
+                        <label for="term2" class="t_lab vt_mid">고유식별정보 처리 동의</label>
+    
+    
+    
+                        <a href="term_2.html" class="more_a vt_mid">자세히보기</a>
+    
+                    </div>
+    
+                    <div class="line">
+    
+                        <input type="checkbox" name="term1" id="term3" class="ck_vo term">
+    
+                        <label for="term3" class="t_lab vt_mid">통신사 이용약관 동의</label>
+    
+    
+    
+                        <a href="term_3.html" class="more_a vt_mid">자세히보기</a>
+    
+                    </div>
+    
+                    <div class="line">
+    
+                        <input type="checkbox" name="term1" id="term4" class="ck_vo term">
+    
+                        <label for="term4" class="t_lab vt_mid">본인확인서비스 동의</label>
+    
+    
+    
+                        <a href="term_4.html" class="more_a vt_mid">자세히보기</a>
+    
+                    </div>
+    
+                </div>
+    
+            </article>
+    
+    
+    
+            <article class="cs_area">
+
+                <div class="cs1 vt_mid">
+            
+                    <img src="img/icon_q.png" alt="문의">
+            
+                </div>
+            
+                <div class="cs2 vt_mid">문의하기</div>
+            
+                <div class="cs3 vt_mid">test1234@test.co.kr</div>
+            
+            </article>
+    
+    
+    
+            <div class="footer_fix">
+    
+                <button type="button" class="btn_common blue">
+    
+                    인증 하기
+    
+                </button>
+    
+            </div>
+    
+        </form>
+    
+    </section>
+
+    <script>
+
+        var p1 = $('.pop1');
+    
+        var p1_h1 = $('.pop1 .p_h1');
+    
+        var p1_sub = $('.pop1 .p_sub');
+    
+        var p1_btn = $('.pop1 .p_btn');
+    
+        var failtxt = "본인인증 실패";
+    
+    
+    
+        $('.btn_common').click(function(){
+    
+            var name = $('#user_name').val();
+    
+            var number = $('#user_num').val();
+    
+            var phone = $('#phone').val();
+    
+            var male_ck = $('#male').prop("checked");
+    
+            var female_ck = $('#female').prop("checked");
+    
+    
+    
+            if(!name) {
+    
+                p1.addClass('on');
+    
+                p1_h1.text(failtxt);
+    
+                p1_sub.text('이름을 입력해주세요.');
+    
+    
+    
+            }else if(!number){
+    
+                p1.addClass('on');
+    
+                p1_h1.text(failtxt);
+    
+                p1_sub.text('주민번호를 입력해주세요.');
+    
+    
+    
+            }else if(!male_ck && !female_ck){
+    
+                p1.addClass('on');
+    
+                p1_h1.text(failtxt);
+    
+                p1_sub.text('성별을 선택해주세요.');
+    
+    
+    
+            }else if(!phone){
+    
+                p1.addClass('on');
+    
+                p1_h1.text(failtxt);
+    
+                p1_sub.text('휴대폰번호를 입력해주세요.');
+    
+    
+    
+            }else if(!$('#all_ck').prop("checked")){
+    
+                p1.addClass('on');
+    
+                p1_h1.text(failtxt);
+    
+                p1_sub.text('약관을 확인 후 동의해주세요.');
+    
+    
+    
+            }else{
+    
+                location.href='join2.html';
+    
+            }
+    
+    
+    
+        });
+    
+    </script>
+    
+</body>
+</html>

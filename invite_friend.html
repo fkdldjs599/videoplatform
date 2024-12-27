@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개룡의</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- 팝업1 -->
+    <section class="pop pop1">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <article class="white_bg">
+    
+            <div class="close_area">
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_con">
+    
+                <h1 class="p_h1"></h1>
+    
+                <p class="p_sub"></p>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btn">확인</button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- 팝업2 -->
+    <section class="pop pop2">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <article class="white_bg">
+    
+            <div class="close_area">
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_con">
+    
+                <h1 class="p_h1"></h1>
+    
+                <p class="p_sub"></p>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btns btn1">취소</button>
+    
+                <button type="button" class="p_btns btn2"></button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- 헤더 -->
+
+    <header class="header">
+        <div class="h_left vt_mid">
+            <button type="button" class="back_btn" onclick="history.go(-1);">
+                <img src="img/back.png" alt="뒤로가기">
+            </button>
+            
+        </div>
+        <div class="h_cen vt_mid">
+            <h1 class="h1">친구 초대</h1>
+        </div>
+        <div class="h_right vt_mid">
+            <button type="button" class="hr_btn alarm">
+                <img src="img/alarm.png" alt="알림">
+
+                <!--신규 알람 있을때 on-->
+                <span class="dot on"></span>
+            </button>
+            <button type="button" class="hr_btn ham">
+                <img src="img/ham.png" alt="메뉴">
+            </button>
+        </div>
+    </header>
+
+    <!-- 햄버거바 -->
+    <div class="ham_menu">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="white_bg">
+    
+            <button type="button" class="hambtn go_set">
+    
+                <img src="img/icon_set.png" alt="설정">
+    
+            </button>
+    
+            <button type="button" class="hambtn close_btn">
+    
+                <img src="img/ham_close.png" alt="닫기">
+    
+            </button>
+    
+    
+    
+            <div class="rel">
+    
+                <div class="h_top">
+    
+                    <div class="pro_area">
+    
+                        <div class="rel2">
+    
+                            <a href="myinfo.html">
+    
+                                <div class="circle">
+    
+                                    <div class="grid">
+    
+                                        <img src="img/empty.png" id="preview" class="empty">
+    
+                                    </div>
+    
+                                </div>
+    
+    
+    
+                                <div class="icon">
+    
+                                    <div class="grid">
+    
+                                        <img src="img/icon_edit.png" alt="수정">
+    
+                                    </div>
+    
+                                </div>
+    
+                            </a>
+    
+                        </div>
+    
+    
+    
+                        <div class="nick">
+    
+                            <span class="fs18 vt_bot">
+    
+                                <a href="myinfo.html">홍길동</a>
+    
+                            </span>
+    
+                            <span class="fs14 vt_bot">님</span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="cash_area">
+    
+                        
+    
+                        <div class="cash_gray">
+
+                            <div class="left vt_mid">보유 캐시</div>
+                        
+                            <div class="right vt_mid suite">999,999,999,999</div>
+                        
+                        </div>
+    
+    
+    
+                        <!-- <div class="go_cash">
+    
+                            <button type="button" class="cash_btn">캐시 충전 하러 가기</button>
+    
+                        </div> -->
+    
+                    </div>
+    
+    
+    
+                    <nav class="ham_nav">
+    
+                        <a href="invite_friend.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv1.png" alt="친구 초대">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">친구 초대</div>
+    
+                        </a>
+    
+                        <a href="faq.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv2.png" alt="자주 묻는 질문">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">자주 묻는 질문</div>
+    
+                        </a>
+    
+                        <a href="inquiry.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv3.png" alt="1:1 문의">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">1:1 문의</div>
+    
+                        </a>
+    
+                        <a href="term.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv4.png" alt="약관">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">약관</div>
+    
+                        </a>
+    
+                    </nav>
+    
+                </div>
+    
+    
+    
+    
+    
+                <div class="h_bottom">
+    
+                    <div class="btn_area">
+    
+                        <button type="button" class="logout_btn">로그아웃</button>
+    
+                    </div>
+    
+    
+    
+                    <div class="copy">
+    
+                        &copy;개룡의. ALL RIGHTS RESERVED.
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    </div>
+
+
+    <!-- 컨텐츠 -->
+
+    <section id="invite" class="page">
+
+
+
+        <article class="invite">
+    
+            <h2 class="page_h2">
+    
+                친구를 초대하면 나와 친구 모두<br>
+    
+                <span class="blue suite bold">10,000</span> 캐시를 받습니다.
+    
+            </h2>
+    
+    
+    
+            <div class="cont">
+    
+    
+    
+                <div class="cash_gray">
+
+                    <div class="left vt_mid">보유 캐시</div>
+                
+                    <div class="right vt_mid suite">999,999,999,999</div>
+                
+                </div>
+    
+    
+    
+                <div class="btn_area">
+    
+                    <button type="button" class="btn_common blue">친구 초대하기</button>
+    
+                </div>
+    
+            </div>
+    
+        </article>
+    
+    
+    
+        <article class="gray_info">
+    
+            <div class="gi_top">
+    
+                <div class="icon vt_mid">
+    
+                    <img src="img/icon_q.png" alt="확인해주세요" >
+    
+                </div>
+    
+                <div class="txt vt_mid">확인해주세요.</div>
+    
+            </div>
+    
+    
+    
+            <div class="gi_bot">
+    
+                <div class="line">
+    
+                    <div class="left vt_top">*</div>
+    
+                    <div class="right vt_top">
+    
+                        초대 받은 유저가 초대 링크를 통해 가입하면 '초대를 한 유저'와 '초대 받은 유저' 양 측 모두에게 적립 캐시 만원씩 지급됩니다.
+    
+                    </div>
+    
+                </div>
+    
+                <div class="line">
+    
+                    <div class="left vt_top">*</div>
+    
+                    <div class="right vt_top">
+    
+                        1계정 당 최대 100명의 친구 초대 혜택을 받을 수 있습니다.
+    
+                        (최대 100만 캐시)
+    
+                    </div>
+    
+                </div>
+    
+                <div class="line">
+    
+                    <div class="left vt_top">*</div>
+    
+                    <div class="right vt_top">
+    
+                        친구 초대 혜택 적립 캐시의 유효기간은 '초대를 보낸 유저'는 90일, '초대를 받은 유저'는 30일 입니다.
+    
+                    </div>
+    
+                </div>
+    
+                <div class="line">
+    
+                    <div class="left vt_top">*</div>
+    
+                    <div class="right vt_top">
+    
+                        적립 캐시는 개룡의 내에서 수강신청을 하는데 사용할 수 있습니다.
+    
+                    </div>
+    
+                </div>
+    
+                <div class="line">
+    
+                    <div class="left vt_top">*</div>
+    
+                    <div class="right vt_top">
+    
+                        공유한 링크 외 다른 방법, 부정한 방법으로 가입하는 경우에는 친구 초대 혜택이 지급되지 않습니다.
+    
+                    </div>
+    
+                </div>
+    
+                <div class="line">
+    
+                    <div class="left vt_top">*</div>
+    
+                    <div class="right vt_top">
+    
+                        캐시 제도 폐지 등 사업자 고유의 사유로 인하여 유효기간 중 캐시를 사용할 수 없게 되는 경우에는, 해당 금액에 상응하는 할인 쿠폰을 지급하여 보상합니다.
+    
+                    </div>
+    
+                </div>
+    
+                <div class="line">
+    
+                    <div class="left vt_top">*</div>
+    
+                    <div class="right vt_top">
+    
+                        서비스 제공자 사정에 의해서 친구 초대 혜택에 대한 내용은 수정될 수 있습니다.
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </article>
+    
+    
+    
+    </section>
+
+
+
+</body>
+</html>

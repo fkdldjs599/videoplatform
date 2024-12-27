@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개룡의</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <!-- 팝업1 -->
+    <section class="pop pop1">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <article class="white_bg">
+    
+            <div class="close_area">
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_con">
+    
+                <h1 class="p_h1"></h1>
+    
+                <p class="p_sub"></p>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btn">확인</button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- 팝업2 -->
+    <section class="pop pop2">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <article class="white_bg">
+    
+            <div class="close_area">
+    
+                <button type="button" class="close_btn">
+    
+                    <img src="img/close_btn.png" alt="닫기">
+    
+                </button>
+    
+            </div>
+    
+    
+    
+            <div class="p_con">
+    
+                <h1 class="p_h1"></h1>
+    
+                <p class="p_sub"></p>
+    
+            </div>
+    
+    
+    
+            <div class="p_btnarea">
+    
+                <button type="button" class="p_btns btn1">취소</button>
+    
+                <button type="button" class="p_btns btn2"></button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- 헤더 -->
+
+    <header class="header">
+        <div class="h_left vt_mid">
+            <button type="button" class="back_btn" onclick="history.go(-1);">
+                <img src="img/back.png" alt="뒤로가기">
+            </button>
+
+        </div>
+        <div class="h_cen vt_mid">
+            <h1 class="h1">실시간 인기 강의</h1>
+        </div>
+        <div class="h_right vt_mid">
+            <button type="button" class="hr_btn alarm">
+                <img src="img/alarm.png" alt="알림">
+
+                <!--신규 알람 있을때 on-->
+                <span class="dot on"></span>
+            </button>
+            <button type="button" class="hr_btn ham">
+                <img src="img/ham.png" alt="메뉴">
+            </button>
+        </div>
+    </header>
+
+    <!-- 햄버거바 -->
+     
+    <div class="ham_menu">
+
+        <div class="black_bg"></div>
+    
+    
+    
+        <div class="white_bg">
+    
+            <button type="button" class="hambtn go_set">
+    
+                <img src="img/icon_set.png" alt="설정">
+    
+            </button>
+    
+            <button type="button" class="hambtn close_btn">
+    
+                <img src="img/ham_close.png" alt="닫기">
+    
+            </button>
+    
+    
+    
+            <div class="rel">
+    
+                <div class="h_top">
+    
+                    <div class="pro_area">
+    
+                        <div class="rel2">
+    
+                            <a href="myinfo.html">
+    
+                                <div class="circle">
+    
+                                    <div class="grid">
+    
+                                        <img src="img/empty.png" id="preview" class="empty">
+    
+                                    </div>
+    
+                                </div>
+    
+    
+    
+                                <div class="icon">
+    
+                                    <div class="grid">
+    
+                                        <img src="img/icon_edit.png" alt="수정">
+    
+                                    </div>
+    
+                                </div>
+    
+                            </a>
+    
+                        </div>
+    
+    
+    
+                        <div class="nick">
+    
+                            <span class="fs18 vt_bot">
+    
+                                <a href="myinfo.html">홍길동</a>
+    
+                            </span>
+    
+                            <span class="fs14 vt_bot">님</span>
+    
+                        </div>
+    
+                    </div>
+    
+    
+    
+                    <div class="cash_area">
+    
+                        
+    
+                        <div class="cash_gray">
+
+                            <div class="left vt_mid">보유 캐시</div>
+                        
+                            <div class="right vt_mid suite">999,999,999,999</div>
+                        
+                        </div>
+    
+    
+    
+                        <!-- <div class="go_cash">
+    
+                            <button type="button" class="cash_btn">캐시 충전 하러 가기</button>
+    
+                        </div> -->
+    
+                    </div>
+    
+    
+    
+                    <nav class="ham_nav">
+    
+                        <a href="invite_friend.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv1.png" alt="친구 초대">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">친구 초대</div>
+    
+                        </a>
+    
+                        <a href="faq.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv2.png" alt="자주 묻는 질문">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">자주 묻는 질문</div>
+    
+                        </a>
+    
+                        <a href="inquiry.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv3.png" alt="1:1 문의">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">1:1 문의</div>
+    
+                        </a>
+    
+                        <a href="term.html" class="ham_a">
+    
+                            <div class="vt_mid icon">
+    
+                                <img src="img/h_nv4.png" alt="약관">
+    
+                            </div>
+    
+                            <div class="vt_mid menu">약관</div>
+    
+                        </a>
+    
+                    </nav>
+    
+                </div>
+    
+    
+    
+    
+    
+                <div class="h_bottom">
+    
+                    <div class="btn_area">
+    
+                        <button type="button" class="logout_btn">로그아웃</button>
+    
+                    </div>
+    
+    
+    
+                    <div class="copy">
+    
+                        &copy;개룡의. ALL RIGHTS RESERVED.
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    </div>
+
+
+    <!-- 컨텐츠 -->
+
+    <section id="video" class="page">
+
+
+
+        <article class="video">
+    
+    
+    
+            <div class="cont">
+    
+                <div class="wrap">
+    
+                    <div class="video_area">
+    
+                        <div class="grid">
+    
+                            <img src="/img/org2/thumb1.png" alt="썸네일" class="thumb">
+    
+                        </div>
+    
+    
+    
+                        <div class="black_area">
+    
+                            <div class="rel">
+    
+                                <div class="v_top">
+    
+                                    <div class="left vt_mid">
+    
+                                        <button type="button" class="v_btns" onclick="history.go(-1);">
+    
+                                            <img src="/img/org2/vbtn_back.png" alt="뒤로">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                    <div class="right vt_mid">
+    
+                                        <button type="button" class="v_btns">
+    
+                                            <img src="/img/org2/vbtn_full.png" alt="전체화면">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="v_cen">
+    
+                                    <button type="button" class="v_btns">
+    
+                                        <img src="/img/org2/vbtn_prev10.png" alt="10초 이전">
+    
+                                    </button>
+    
+    
+    
+                                    <button type="button" class="v_btns play">
+    
+                                        <img src="/img/org2/vbtn_play.png" alt="재생">
+    
+                                    </button>
+    
+    
+    
+                                    <button type="button" class="v_btns">
+    
+                                        <img src="/img/org2/vbtn_next10.png" alt="10초 다음">
+    
+                                    </button>
+    
+                                </div>
+    
+                                <div class="v_bot">
+    
+                                    <div class="left vt_mid">
+    
+                                        <div class="time_area">
+    
+                                            <span class="suite">02:22 / 09:50</span>
+    
+                                        </div>
+    
+                                        <div class="wrap">
+    
+                                            <div class="bar_area vt_mid">
+    
+                                                <input type="range" name="playbar" id="playbar" class="bar" value="0">
+    
+                                            </div>
+    
+                                            <div class="speed vt_mid">
+    
+                                                <span class="sp_btn suite on">X2.0</span>
+    
+    
+    
+                                                <ul class="sp_ul">
+    
+                                                    <li class="sp_li">X2.0</li>
+    
+                                                    <li class="sp_li">X1.5</li>
+    
+                                                    <li class="sp_li">X1.0</li>
+    
+                                                </ul>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+    
+    
+                                    <div class="right vt_mid">
+    
+                                        <button type="button" class="v_btns">
+    
+                                            <img src="/img/org2/vbtn_lock.png" alt="잠금">
+    
+                                        </button>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                    
+    
+                        <!-- <video controls width="100%" height="200" id="player">
+    
+                            <source src="">
+    
+                        </video> -->
+    
+                    </div>
+    
+    
+    
+                    <div class="info_area">
+    
+                        <h2 class="v_title">
+    
+                            1년에 3천만원짜리 청구오더가 있다?1년에 3천만원짜리 청구오더가 있다?1년에 3천만원짜리 청구오더가 있다?
+    
+                        </h2>
+    
+    
+    
+                        <div class="v_bot">
+    
+                            <div class="v_left vt_mid">
+    
+                                <span class="blue">구매가</span>
+    
+                                <span class="blue"><span class="suite">999,999,999</span>원</span>
+    
+                            </div>
+    
+                            <div class="v_right vt_mid">
+    
+                                <span class="gray">2024.05.30</span>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="btn_area">
+    
+                    <button type="button" class="btn_common blue">구매하기</button>
+    
+                </div>
+    
+    
+    
+                <div class="detail_wrap">
+    
+                    <h3 class="v_h3">상세내용</h3>
+    
+    
+    
+                    <div class="detail_box">
+    
+                        상세내용입니다.
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="btn_area">
+    
+                    <button type="button" class="btn_common blue">구매하기</button>
+    
+                </div>
+    
+            </div>
+    
+        </article>
+    
+    
+    
+    </section>
+
+    <footer class="footer">
+        <a href="index.html" class="nav on">
+            <div class="icon_area">
+                <img src="img/nv1_on.png">
+            </div>
+            <div class="text_area">홈</div>
+        </a>
+        <a href="class.html" class="nav ">
+            <div class="icon_area">
+                <img src="img/nv2.png">
+            </div>
+            <div class="text_area">수강신청</div>
+        </a>
+        <a href="class_my.html" class="nav">
+            <div class="icon_area">
+                <img src="img/nv3.png">
+            </div>
+            <div class="text_area">수강중인 강좌</div>
+        </a>
+        <a href="" class="nav">
+            <div class="icon_area">
+                <div class="profile">
+                    <div class="grid">
+                        <img src="img/nv4.png">
+                    </div>
+                </div>
+            </div>
+            <div class="text_area">마이페이지</div>
+        </a>
+    </footer>
+
+</body>
+</html>
